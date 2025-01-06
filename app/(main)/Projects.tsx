@@ -14,7 +14,7 @@ function Projects() {
               key={project.title}
               title={project.title}
               description={project.description}
-              image_url={project.image_url}
+              //   image_url={project.image_url}
               stacks={project.stack}
             />
           ))}
