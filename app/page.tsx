@@ -3,9 +3,9 @@ import React from "react";
 import NavBar from "./(main)/NavBar";
 import Hero from "./(main)/Hero";
 import About from "./(main)/About";
-// import Works from "./(main)/Works";
-// import Footer from "./(main)/Footer";
-// import Skills from "./(main)/Skills";
+import Skills from "./(main)/Skills";
+import Projects from "./(main)/Projects";
+import Footer from "./(main)/Footer";
 
 function RootPage() {
   return (
@@ -13,9 +13,9 @@ function RootPage() {
       <NavBar />
       <Hero />
       <About />
-      {/* <Skills /> */}
-      {/* <Works /> */}
-      {/* <Footer />  */}
+      <Skills />
+      <Projects />
+      <Footer />
     </main>
   );
 }
