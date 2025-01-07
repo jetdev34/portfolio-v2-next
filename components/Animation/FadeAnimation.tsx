@@ -13,8 +13,9 @@ function FadeAnimation({ children, duration = 1.5, delay = 0 }: Props) {
   return (
     <motion.div
       initial={{ opacity: 0 }} // Start invisible and slightly below
-      animate={{ opacity: 1 }} // Fade in and float to original position
+      whileInView={{ opacity: 1 }} // Fade in and float to original position
       transition={{ duration, delay, ease: "easeOut" }} // Smooth easing and default duration
+      viewport={{ once: true, amount: 0.8 }} // Trigger animation when 80% of the element is in view
     >
       {children}
     </motion.div>

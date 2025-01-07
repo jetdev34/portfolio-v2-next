@@ -46,21 +46,21 @@ export const PROJECTS = [
     title: "Trackpaws",
     stack: ["React Native", "Firebase"],
     description:
-      "Trackpaws is a pet tracking app that allows users to track their pets' location and activity and has a lost and found feature. ",
-    image_url: "./html-icon.svg",
+      "Trackpaws is my capstone project from my college school. It is a pet tracking mobile application designed to help pet owners monitor their pet's location. The application also has a lost and found system, making it easier to locate missing pets and connect with their owners. I contributed on the development of the lost and found feature and the overall design of the mobile application and web application ",
+    // image_url: "/trackpaws.png",
   },
-  {
-    title: "Oishiishi",
-    stack: ["Nextjs", "Supabase"],
-    description:
-      "A E-commerce website that allowed the user to order sushi online",
-    image_url: "./html-icon.svg",
-  },
-  {
-    title: "Hoop Safe",
-    stack: ["React", "Supabase", "YouTube API", "NBA API"],
-    description:
-      "A web application that allows the user to track their favorite NBA team and prevents showing spoilers ",
-    image_url: "./html-icon.svg",
-  },
+  // {
+  //   title: "Oishiishi",
+  //   stack: ["Nextjs", "Supabase"],
+  //   description:
+  //     "A E-commerce website that allowed the user to order sushi online",
+  //   // image_url: "./html-icon.svg",
+  // },
+  // {
+  //   title: "Hoop Safe",
+  //   stack: ["React", "Supabase", "YouTube API", "NBA API"],
+  //   description:
+  //     "A web application that allows the user to track their favorite NBA team and prevents showing spoilers ",
+  //   // image_url: "./html-icon.svg",
+  // },
 ];

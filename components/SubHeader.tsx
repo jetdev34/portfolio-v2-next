@@ -35,7 +35,7 @@ function SubHeader({ text }: HighlightProps) {
         <motion.span
           key={index}
           variants={child}
-          className="font-silk text-2xl uppercase relative md:text-5xl"
+          className="font-silk text-2xl uppercase relative md:text-6xl"
         >
           {letter === " " ? "\u00A0" : letter}
         </motion.span>

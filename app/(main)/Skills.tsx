@@ -1,21 +1,17 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
 import SubHeader from "../../components/SubHeader";
 import Box from "../../components/Box";
 import { SKILLS } from "@/lib/data";
+import FadeUpAnimation from "@/components/Animation/FadeUpAnimation";
 function Skills() {
   return (
     <section className="spacing" id="skills">
       <div className="container">
         <SubHeader text="Skills" />
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          viewport={{ amount: 1, once: true }}
-          className="grid"
-        >
+
+        <FadeUpAnimation className="grid" duration={0.8}>
           {SKILLS.map((skill) => (
             <Box
               key={skill.name}
@@ -23,7 +19,7 @@ function Skills() {
               text={skill.name}
             />
           ))}
-        </motion.div>
+        </FadeUpAnimation>
       </div>
     </section>
   );

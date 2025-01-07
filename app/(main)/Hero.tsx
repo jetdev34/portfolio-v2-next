@@ -4,6 +4,7 @@ import Particles from "../../components/Particles/Particles";
 import PolkaBackground from "@/components/Polka/PolkaBackground";
 import FadeUpAnimation from "../../components/Animation/FadeUpAnimation";
 import FadeAnimation from "../../components/Animation/FadeAnimation";
+import Button from "@/components/Button";
 
 function Hero() {
   return (
@@ -25,6 +26,11 @@ function Hero() {
           <FadeAnimation delay={1.4}>
             <span className="font-silk">Front-end Developer</span>
           </FadeAnimation>
+
+          <div className="space-x-12 mt-8">
+            <Button text="Download CV" />
+            <Button text="Check my Projects " />
+          </div>
         </div>
       </div>
     </div>
