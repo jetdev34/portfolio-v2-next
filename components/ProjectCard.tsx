@@ -7,16 +7,29 @@ interface Props {
   title: string;
   stacks: string[];
   description: string;
+  flip: string;
+  demo_link: string;
+  code_link: string;
 }
-// image_url: string;
-// image_url
-function ProjectCard({ title, stacks, description }: Props) {
+
+function ProjectCard({
+  title,
+  stacks,
+  description,
+  flip,
+  demo_link,
+  code_link,
+}: Props) {
+  const flexClasses = `flex flex-col md:flex-row ${
+    flip === "flex-row-reverse" ? "md:flex-row-reverse" : ""
+  }`;
+
   return (
-    <div className="flex justify-between py-4 gap-12">
-      <div className="w-[54%]">
-        <Image src="/trackpaws.png" alt={title} width={600} height={50} />
+    <div className={`${flexClasses} py-4 gap-12`}>
+      <div className="w-[100%] lg:w-[49%]">
+        <Image src="/trackpaws.png" alt={title} width={600} height={200} />
       </div>
-      <div className="w-[45%] font-silk space-y-4">
+      <div className="w-[100%] lg:w-[49%] flex flex-col gap-4 font-silk">
         <h2 className="text-4xl">{title}</h2>
         <ul className="flex gap-2">
           {stacks.map((stack) => (
@@ -28,8 +41,20 @@ function ProjectCard({ title, stacks, description }: Props) {
         <p>{description}</p>
 
         <div className="flex gap-4">
-          <Button text="View Project" />
-          <Button text="View Code" />
+          <Button
+            rel="noopener noreferrer"
+            target="_blank"
+            text="View Project"
+            icon="link"
+            href={demo_link}
+          />
+          <Button
+            rel="noopener noreferrer"
+            target="_blank"
+            text="View Code"
+            icon="github"
+            href={code_link}
+          />
         </div>
       </div>
     </div>

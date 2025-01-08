@@ -19,6 +19,8 @@ html {
 }
 
 body {
+  line-height: 2;
+  /* letter-spacing: 1.5; */
   color: var(--foreground);
   background: var(--background);
   /* font-family: Arial, Helvetica, sans-serif; */

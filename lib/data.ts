@@ -48,13 +48,17 @@ export const PROJECTS = [
     description:
       "Trackpaws is my capstone project from my college school. It is a pet tracking mobile application designed to help pet owners monitor their pet's location. The application also has a lost and found system, making it easier to locate missing pets and connect with their owners. I contributed on the development of the lost and found feature and the overall design of the mobile application and web application ",
     // image_url: "/trackpaws.png",
+    demo_link: "https://trackpaws-96bu.vercel.app/",
+    code_link: "https://github.com/BJChickky12/TrackPaws-main",
   },
   // {
-  //   title: "Oishiishi",
+  //   title: "Sushi E-commerce",
   //   stack: ["Nextjs", "Supabase"],
   //   description:
   //     "A E-commerce website that allowed the user to order sushi online",
   //   // image_url: "./html-icon.svg",
+  //   demo_link: "https://trackpaws-96bu.vercel.app/",
+  //   code_link: "https://github.com/BJChickky12/TrackPaws-main",
   // },
   // {
   //   title: "Hoop Safe",
@@ -62,5 +66,7 @@ export const PROJECTS = [
   //   description:
   //     "A web application that allows the user to track their favorite NBA team and prevents showing spoilers ",
   //   // image_url: "./html-icon.svg",
+  //   demo_link: "https://trackpaws-96bu.vercel.app/",
+  //   code_link: "https://github.com/BJChickky12/TrackPaws-main",
   // },
 ];

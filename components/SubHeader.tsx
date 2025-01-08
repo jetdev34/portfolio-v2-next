@@ -29,13 +29,13 @@ function SubHeader({ text }: HighlightProps) {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 1 }}
-      className="mb-8"
+      className="mb-8 "
     >
       {letters.map((letter, index) => (
         <motion.span
           key={index}
           variants={child}
-          className="font-silk text-2xl uppercase relative md:text-6xl"
+          className="font-silk text-5xl uppercase relative md:text-6xl"
         >
           {letter === " " ? "\u00A0" : letter}
         </motion.span>
