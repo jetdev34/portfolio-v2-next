@@ -1,7 +1,11 @@
-// import type { Metadata } from "next";
+import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
+export const metadata: Metadata = {
+  title: "JetDev | Personal Portfolio",
+  description: "Jethro is a front-end developer based in the Philippines.",
+};
 // !Set one
 // const headerFont = localFont({
 //   src: "../fonts/PilcrowRounded-Semibold.otf",
