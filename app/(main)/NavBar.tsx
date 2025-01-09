@@ -20,7 +20,9 @@ function NavBar() {
   return (
     <nav
       className={`${
-        isScrolled ? "bg-card  shadow-lg" : "bg-transparent border-transparent"
+        isScrolled
+          ? "bg-card shadow-lg text-black"
+          : "bg-transparent border-transparent"
       } sticky top-0 w-full z-20 py-2 mb-0 transition-all duration-300 ease-in-out`}
     >
       <div className="container flex items-center gap-24">

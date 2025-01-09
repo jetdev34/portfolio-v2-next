@@ -7,7 +7,7 @@ import { SKILLS } from "@/lib/data";
 import FadeUpAnimation from "@/components/Animation/FadeUpAnimation";
 function Skills() {
   return (
-    <section className="spacing" id="skills">
+    <section className="spacing bg-[#FBFBFB] text-black" id="skills">
       <div className="container">
         <SubHeader text="Skills" />
 

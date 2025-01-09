@@ -1,0 +1,36 @@
+/* Polka dots background */
+.background {
+  position: absolute;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #fff 1%, transparent 2%) center/100px
+    100px;
+  z-index: -1; /* Ensure it's placed behind the content */
+  pointer-events: none; /* Disable interactions with the background */
+}
+
+/* Particles styles */
+.particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0;
+  animation: fall linear infinite;
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); /* Glow effect */
+}
+
+/* Generate keyframes dynamically */
+@keyframes fall {
+  0% {
+    transform: translateY(-10px) scale(var(--random-scale, 1));
+    opacity: var(--random-opacity, 1);
+  }
+  100% {
+    transform: translateY(100vh) scale(var(--random-scale, 1));
+  }
+}

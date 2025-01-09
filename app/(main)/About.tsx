@@ -8,7 +8,7 @@ function About() {
 
   return (
     <>
-      <main className="spacing" id="about">
+      <main className="spacing bg-[#FBFBFB] text-black" id="about">
         <Particles />
         <div className="container">
           <SubHeader text="About Me" />

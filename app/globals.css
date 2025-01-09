@@ -20,6 +20,7 @@ html {
 
 body {
   line-height: 2;
+  letter-spacing: 1.4;
   /* letter-spacing: 1.5; */
   color: var(--foreground);
   background: var(--background);
@@ -66,6 +67,7 @@ body {
   }
 
   .bg-card {
-    @apply bg-stone-900;
+    /* @apply bg-stone-900; */
+    @apply bg-[#FBFBFB];
   }
 }

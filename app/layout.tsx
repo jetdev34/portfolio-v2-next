@@ -11,7 +11,7 @@ import "./globals.css";
 //   variable: "--font-light",
 // });
 const silk = localFont({
-  src: "../fonts/BasierSquareMono-Regular.otf",
+  src: "../fonts/Agnella-Bold.otf",
   variable: "--font-silk",
 });
 

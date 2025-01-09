@@ -1,20 +1,16 @@
 import React from "react";
-import Particles from "../../components/Particles/Particles";
-import PolkaBackground from "@/components/Polka/PolkaBackground";
+import BackgroundEffects from "@/components/BackgroundEffects/BackgroundEffects";
 import FadeUpAnimation from "../../components/Animation/FadeUpAnimation";
 import FadeAnimation from "../../components/Animation/FadeAnimation";
 import Button from "@/components/Button";
+
 function Hero() {
   return (
     <div className="relative w-full h-screen">
-      {/* Particles Effect */}
-      <Particles />
-      {/* Polka Dots Background */}
-      <PolkaBackground />
+      {/* Combined Background Effects */}
+      <BackgroundEffects />
       <div className="absolute inset-0 container">
-        {/* Content Section */}
         <div className="absolute inset-0 flex flex-col py-12 justify-center items-center z-10">
-          {/* <Animation /> */}
           <FadeUpAnimation delay={0}>
             <h1 className="text-white font-bold text-4xl md:text-6xl lg:text-8xl font-silk text-center">
               Jethro Alonzo
@@ -22,7 +18,7 @@ function Hero() {
           </FadeUpAnimation>
 
           <FadeAnimation delay={1.4}>
-            <span className="text-lg md:text-xl lg-2xl  font-silk">
+            <span className="text-lg md:text-xl lg-2xl font-silk">
               Front-end Developer
             </span>
           </FadeAnimation>
