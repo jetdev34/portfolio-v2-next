@@ -5,7 +5,11 @@ interface Props {
 }
 
 function TagStacks({ text }: Props) {
-  return <span className="p-2 bg-gray-800 rounded-md">{text}</span>;
+  return (
+    <span className="p-2 text-xs text-black font-silk bg-yellow-600 rounded-2xl">
+      {text}
+    </span>
+  );
 }
 
 export default TagStacks;

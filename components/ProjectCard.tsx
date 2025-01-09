@@ -45,7 +45,7 @@ function ProjectCard({
           ))}
         </ul>
         <p>
-          {isExpanded ? description : `${description.slice(0, 200)}...`}
+          {isExpanded ? description : `${description.slice(0, 280)}...`}
           <button
             onClick={toggleDescription}
             className="text-blue-500 underline ml-2"

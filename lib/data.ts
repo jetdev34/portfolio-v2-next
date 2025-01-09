@@ -51,22 +51,22 @@ export const PROJECTS = [
     demo_link: "https://trackpaws-96bu.vercel.app/",
     code_link: "https://github.com/BJChickky12/TrackPaws-main",
   },
-  // {
-  //   title: "Sushi E-commerce",
-  //   stack: ["Nextjs", "Supabase"],
-  //   description:
-  //     "A E-commerce website that allowed the user to order sushi online",
-  //   // image_url: "./html-icon.svg",
-  //   demo_link: "https://trackpaws-96bu.vercel.app/",
-  //   code_link: "https://github.com/BJChickky12/TrackPaws-main",
-  // },
-  // {
-  //   title: "Hoop Safe",
-  //   stack: ["React", "Supabase", "YouTube API", "NBA API"],
-  //   description:
-  //     "A web application that allows the user to track their favorite NBA team and prevents showing spoilers ",
-  //   // image_url: "./html-icon.svg",
-  //   demo_link: "https://trackpaws-96bu.vercel.app/",
-  //   code_link: "https://github.com/BJChickky12/TrackPaws-main",
-  // },
+  {
+    title: "Sushi E-commerce",
+    stack: ["Nextjs", "Supabase"],
+    description:
+      "A E-commerce website that allowed the user to order sushi online",
+    // image_url: "./html-icon.svg",
+    demo_link: "https://trackpaws-96bu.vercel.app/",
+    code_link: "https://github.com/BJChickky12/TrackPaws-main",
+  },
+  {
+    title: "Hoop Safe",
+    stack: ["React", "Supabase", "YouTube API", "NBA API"],
+    description:
+      "A web application that allows the user to track their favorite NBA team and prevents showing spoilers ",
+    // image_url: "./html-icon.svg",
+    demo_link: "https://trackpaws-96bu.vercel.app/",
+    code_link: "https://github.com/BJChickky12/TrackPaws-main",
+  },
 ];
