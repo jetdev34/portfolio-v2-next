@@ -16,11 +16,11 @@ function Button({ text, icon = "default", href, target, rel }: Props) {
     <Link
       href={href}
       target={target}
-      className="border py-2 px-2 md:px-4 lg:px-6 font-silk flex items-center gap-4"
+      className="border py-2 text-xs md:text-lg px-2 md:px-4 lg:px-6 font-silk flex items-center gap-4"
       rel={rel}
     >
-      {icon === "link" && <FaExternalLinkAlt size={30} />}
-      {icon === "github" && <FaGithub size={30} />}
+      {icon === "link" && <FaExternalLinkAlt size={20} />}
+      {icon === "github" && <FaGithub size={20} />}
       {text}
     </Link>
   );
