@@ -16,13 +16,15 @@ function Hero() {
         <div className="absolute inset-0 flex flex-col py-12 justify-center items-center z-10">
           {/* <Animation /> */}
           <FadeUpAnimation delay={0}>
-            <h1 className="text-white font-bold text-5xl md:text-8xl font-silk text-center">
+            <h1 className="text-white font-bold text-4xl md:text-6xl lg:text-8xl font-silk text-center">
               Jethro Alonzo
             </h1>
           </FadeUpAnimation>
 
           <FadeAnimation delay={1.4}>
-            <span className="text-xl  font-silk">Front-end Developer</span>
+            <span className="text-lg md:text-xl lg-2xl  font-silk">
+              Front-end Developer
+            </span>
           </FadeAnimation>
 
           <div className="flex gap-4 mt-8">

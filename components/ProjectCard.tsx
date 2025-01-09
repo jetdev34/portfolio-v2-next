@@ -1,5 +1,7 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import { useState } from "react";
 import TagStacks from "./TagStacks";
 import Button from "./Button";
 
@@ -20,14 +22,18 @@ function ProjectCard({
   demo_link,
   code_link,
 }: Props) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   const flexClasses = `flex flex-col md:flex-row ${
     flip === "flex-row-reverse" ? "md:flex-row-reverse" : ""
   }`;
 
+  const toggleDescription = () => setIsExpanded(!isExpanded);
+
   return (
-    <div className={`${flexClasses} py-4 gap-12`}>
+    <div className={`${flexClasses} py-4 gap-12 `}>
       <div className="w-[100%] lg:w-[49%]">
-        <Image src="/trackpaws.png" alt={title} width={600} height={200} />
+        <Image src="/trackpaws.png" alt={title} width={600} height={420} />
       </div>
       <div className="w-[100%] lg:w-[49%] flex flex-col gap-4 font-silk">
         <h2 className="text-4xl">{title}</h2>
@@ -38,7 +44,15 @@ function ProjectCard({
             </li>
           ))}
         </ul>
-        <p>{description}</p>
+        <p>
+          {isExpanded ? description : `${description.slice(0, 200)}...`}
+          <button
+            onClick={toggleDescription}
+            className="text-blue-500 underline ml-2"
+          >
+            {isExpanded ? "See Less" : "See More"}
+          </button>
+        </p>
 
         <div className="flex gap-4">
           <Button

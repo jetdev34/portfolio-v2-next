@@ -8,7 +8,7 @@ function Footer() {
     <footer className="py-6 border-t" id="contact">
       <div className="container flex flex-col md:flex-row md:justify-between md:items-center">
         <div>
-          <span className="uppercase">Last updated 2025-01-06</span>
+          <span className="uppercase">Last updated 2025-01-09</span>
 
           <ul className="my-4 p-0 flex gap-4">
             <li className="link ">
