@@ -1,12 +1,31 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 function NavBar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="sticky top-0 left-0 w-full z-20 py-2  bg-transparent border-b border-gray-700">
+    <nav
+      className={`${
+        isScrolled ? "bg-card  shadow-lg" : "bg-transparent border-transparent"
+      } sticky top-0 w-full z-20 py-2 mb-0 transition-all duration-300 ease-in-out`}
+    >
       <div className="container flex items-center gap-24">
         <h2 className="text-xl font-bold tracking-widest">JetDev</h2>
-        <ul className="hidden md:flex items-center gap-12 font-silk">
+        <ul className="hidden md:flex items-center gap-12">
           <li>
             <Link className="link" href="#hero">
               Home

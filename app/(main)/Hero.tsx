@@ -34,7 +34,7 @@ function Hero() {
               href="/Alonzo_Jethro_Resume.pdf"
               text="Download CV"
             />
-            <Button href="#projects" text="Check my Projects" />
+            <Button href="#projects" text="My Projects" />
           </div>
         </div>
       </div>

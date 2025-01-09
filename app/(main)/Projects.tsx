@@ -7,7 +7,7 @@ import FadeUpAnimation from "@/components/Animation/FadeUpAnimation";
 function Projects() {
   return (
     <>
-      <div className="border-2 border-dashed border-gray-500 mx-6"></div>
+      <div className="border-2  border-stone-800 mx-6"></div>
       <section className="spacing" id="projects">
         <div className="container">
           <SubHeader text="Projects" />

@@ -19,7 +19,7 @@ function Footer() {
                 <FaLinkedin size={30} />
               </Link>
             </li>
-            <li>
+            <li className="link">
               <Link
                 target="_blank"
                 href="https://github.com/jetdev34"

@@ -11,7 +11,7 @@ function Skills() {
       <div className="container">
         <SubHeader text="Skills" />
 
-        <FadeUpAnimation className="grid" duration={0.5}>
+        <FadeUpAnimation className="grid " duration={0.5}>
           {SKILLS.map((skill) => (
             <Box
               key={skill.name}

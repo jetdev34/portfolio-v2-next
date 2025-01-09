@@ -44,9 +44,9 @@ export const SKILLS = [
 export const PROJECTS = [
   {
     title: "Trackpaws",
-    stack: ["React Native", "Firebase"],
+    stack: ["React Native Expo", "Firebase", "IoT"],
     description:
-      "Trackpaws is my capstone project from my college school. It is a pet tracking mobile application designed to help pet owners monitor their pet's location. The application also has a lost and found system, making it easier to locate missing pets and connect with their owners. I contributed on the development of the lost and found feature and the overall design of the mobile application and web application ",
+      "TrackPaws was my capstone project during college. It is a pet-tracking mobile application designed to help pet owners monitor their pets' locations. The application also includes a lost-and-found system, making it easier to locate missing pets and connect them with their owners. I contributed to the development of the lost-and-found feature as well as the overall design of both the mobile and web applications. ",
     // image_url: "/trackpaws.png",
     demo_link: "https://trackpaws-96bu.vercel.app/",
     code_link: "https://github.com/BJChickky12/TrackPaws-main",

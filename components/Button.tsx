@@ -16,7 +16,7 @@ function Button({ text, icon = "default", href, target, rel }: Props) {
     <Link
       href={href}
       target={target}
-      className="border py-2 text-xs md:text-lg px-2 md:px-4 lg:px-6 font-silk flex items-center gap-4"
+      className="border border-color bg-black rounded-sm py-2 text-xs md:text-lg px-2 md:px-4 lg:px-6 font-silk flex items-center gap-4 hover:opacity-50 transition duration-300 ease-in-out"
       rel={rel}
     >
       {icon === "link" && <FaExternalLinkAlt size={20} />}
