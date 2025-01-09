@@ -3,12 +3,22 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Particles.module.css";
 
+// Define the type for the style object
+interface ParticleStyle {
+  "--random-x": string;
+  "--random-scale": number;
+  "--random-opacity": number;
+  animationDuration: string;
+  animationDelay: string;
+  left: string;
+}
+
 function Particles() {
-  const [randomStyles, setRandomStyles] = useState([]);
+  const [randomStyles, setRandomStyles] = useState<ParticleStyle[]>([]); // Add type annotation for the state
 
   useEffect(() => {
     // Generate random styles only on the client
-    const generateRandomStyle = () => {
+    const generateRandomStyle = (): ParticleStyle => {
       const randomX = Math.random() * 100; // Random X position (in vw)
       const randomScale = Math.random() * 0.5 + 0.5; // Random scale (0.5 to 1)
       const randomOpacity = Math.random(); // Random opacity (0 to 1)
@@ -26,7 +36,7 @@ function Particles() {
     };
 
     // Generate styles for 12 particles
-    const stylesArray = [...Array(12)].map(() => generateRandomStyle());
+    const stylesArray = Array.from({ length: 12 }, () => generateRandomStyle());
     setRandomStyles(stylesArray);
   }, []);
 
