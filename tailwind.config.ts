@@ -14,8 +14,7 @@ export default {
       },
       fontFamily: {
         regular: ["var(--font-regular)", "sans-serif"],
-        light: ["var(--font-light)", "sans-serif"],
-        silk: ["var(--font-silk)", "sans-serif"],
+        header: ["var(--font-header)", "sans-serif"],
       },
     },
   },

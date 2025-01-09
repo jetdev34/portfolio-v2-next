@@ -12,8 +12,10 @@ function RootPage() {
     <main>
       <NavBar />
       <Hero />
-      <About />
-      <Skills />
+      <div className="bg-secondary">
+        <About />
+        <Skills />
+      </div>
       <Projects />
       <Footer />
     </main>

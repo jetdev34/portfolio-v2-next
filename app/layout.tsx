@@ -2,17 +2,24 @@
 import localFont from "next/font/local";
 import "./globals.css";
 
-// const regular = localFont({
-//   src: "./fonts/Almarai-Regular.ttf",
+// !Set one
+// const headerFont = localFont({
+//   src: "../fonts/PilcrowRounded-Semibold.otf",
+//   variable: "--font-header",
+// });
+// const regularFont = localFont({
+//   src: "../fonts/Hind-Regular.otf",
 //   variable: "--font-regular",
 // });
-// const light = localFont({
-//   src: "./fonts/Almarai-Light.ttf",
-//   variable: "--font-light",
-// });
-const silk = localFont({
-  src: "../fonts/Agnella-Bold.otf",
-  variable: "--font-silk",
+
+// !Set two
+const headerFont = localFont({
+  src: "../fonts/Chillax-Semibold.otf",
+  variable: "--font-header",
+});
+const regularFont = localFont({
+  src: "../fonts/Synonym-Regular.otf",
+  variable: "--font-regular",
 });
 
 export default function RootLayout({
@@ -22,7 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${silk.variable}`}>{children}</body>
+      <body className={`${headerFont.variable} ${regularFont.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }

@@ -35,9 +35,9 @@ function ProjectCard({
       <div className="w-[100%] lg:w-[49%]">
         <Image src="/trackpaws.png" alt={title} width={600} height={420} />
       </div>
-      <div className="w-[100%] lg:w-[49%] flex flex-col gap-4 font-silk">
+      <div className="w-[100%] lg:w-[49%] flex flex-col gap-4 ">
         <h2 className="text-4xl">{title}</h2>
-        <ul className="flex gap-2">
+        <ul className="flex flex-row gap-2">
           {stacks.map((stack) => (
             <li key={stack}>
               <TagStacks text={stack} />

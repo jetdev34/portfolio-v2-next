@@ -20,12 +20,14 @@ html {
 
 body {
   line-height: 2;
-  letter-spacing: 1.4;
-  /* letter-spacing: 1.5; */
   color: var(--foreground);
   background: var(--background);
-  font-family: Silk, sans-serif;
-  /* font-size: 12px; */
+  font-family: regularFont, sans-serif;
+}
+
+h1 {
+  font-family: headerFont, sans-serif;
+  /* font-family: regularFont; */
 }
 
 @layer utilities {
@@ -34,7 +36,7 @@ body {
   }
 
   .spacing {
-    @apply py-16 md:py-24;
+    @apply py-16 md:py-20;
   }
 
   .link {
@@ -69,5 +71,15 @@ body {
   .bg-card {
     /* @apply bg-stone-900; */
     @apply bg-[#FBFBFB];
+  }
+
+  .bg-secondary {
+    background-color: #eaeaea;
+    opacity: 1;
+    background: linear-gradient(135deg, #f6f6f655 25%, transparent 25%) -40px 0/
+        80px 80px,
+      linear-gradient(225deg, #f6f6f6 25%, transparent 25%) -40px 0/ 80px 80px,
+      linear-gradient(315deg, #f6f6f655 25%, transparent 25%) 0px 0/ 80px 80px,
+      linear-gradient(45deg, #f6f6f6 25%, #eaeaea 25%) 0px 0/ 80px 80px;
   }
 }
