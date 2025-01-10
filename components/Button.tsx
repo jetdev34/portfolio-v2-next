@@ -5,13 +5,14 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 interface Props {
   text: string;
-  href: string;
+  href?: string;
   icon?: "link" | "github" | "default";
   target?: string;
   rel?: string;
 }
 
 function Button({ text, icon = "default", href, target, rel }: Props) {
+  if (!href) return null; // Skip rendering if href is missing
   return (
     <Link
       href={href}

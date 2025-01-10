@@ -23,8 +23,8 @@ function Projects() {
                 description={project.description}
                 flip={i % 2 === 0 ? "flex-row" : "flex-row-reverse"}
                 stacks={project.stack}
-                demo_link={project.demo_link}
-                code_link={project.code_link}
+                demo_link={project.demo_link} // Default to null if undefined
+                code_link={project.code_link} // Default to null if undefined
               />
             </FadeUpAnimation>
           ))}

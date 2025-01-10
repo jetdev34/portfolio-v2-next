@@ -55,20 +55,24 @@ function ProjectCard({
         </p>
 
         <div className="flex gap-4">
-          <Button
-            rel="noopener noreferrer"
-            target="_blank"
-            text="View Project"
-            icon="link"
-            href={demo_link}
-          />
-          <Button
-            rel="noopener noreferrer"
-            target="_blank"
-            text="View Code"
-            icon="github"
-            href={code_link}
-          />
+          {demo_link && (
+            <Button
+              rel="noopener noreferrer"
+              target="_blank"
+              text="View Project"
+              icon="link"
+              href={demo_link}
+            />
+          )}
+          {code_link && (
+            <Button
+              rel="noopener noreferrer"
+              target="_blank"
+              text="View Code"
+              icon="github"
+              href={code_link}
+            />
+          )}
         </div>
       </div>
     </div>

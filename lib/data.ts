@@ -52,13 +52,13 @@ export const PROJECTS = [
     code_link: "https://github.com/BJChickky12/TrackPaws-main",
   },
   // {
-  //   title: "Sushi E-commerce",
+  //   title: "SushiMax - E-commerce website",
   //   stack: ["Nextjs", "Supabase"],
   //   description:
-  //     "A E-commerce website that allowed the user to order sushi online",
+  //     "SushiMax is an e-commerce website designed to provide a seamless online sushi ordering experience. The platform allows users to browse a variety of sushi options and customize their orders",
   //   // image_url: "./html-icon.svg",
-  //   demo_link: "https://trackpaws-96bu.vercel.app/",
-  //   code_link: "https://github.com/BJChickky12/TrackPaws-main",
+  //   demo_link: null,
+  //   code_link: null,
   // },
   // {
   //   title: "Hoop Safe",

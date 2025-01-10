@@ -13,7 +13,7 @@ function Hero() {
       <div className="absolute inset-0 container">
         <div className="absolute inset-0 flex flex-col py-12 justify-center items-center z-10">
           <FadeUpAnimation delay={0}>
-            <h1 className="text-white  text-4xl md:text-6xl lg:text-8xl text-center">
+            <h1 className="text-white text-5xl md:text-6xl lg:text-8xl text-center">
               Jethro Alonzo
             </h1>
           </FadeUpAnimation>
