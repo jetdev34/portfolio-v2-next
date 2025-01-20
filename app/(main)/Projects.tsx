@@ -25,6 +25,7 @@ function Projects() {
                 stacks={project.stack}
                 demo_link={project.demo_link} // Default to null if undefined
                 code_link={project.code_link} // Default to null if undefined
+                image_url={project.image_url}
               />
             </FadeUpAnimation>
           ))}

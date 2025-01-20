@@ -12,6 +12,7 @@ interface Props {
   flip: string;
   demo_link: string;
   code_link: string;
+  image_url: string;
 }
 
 function ProjectCard({
@@ -21,6 +22,7 @@ function ProjectCard({
   flip,
   demo_link,
   code_link,
+  image_url,
 }: Props) {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -33,7 +35,7 @@ function ProjectCard({
   return (
     <div className={`${flexClasses} py-4 gap-12 `}>
       <div className="w-[100%] lg:w-[49%]">
-        <Image src="/trackpaws.png" alt={title} width={600} height={420} />
+        <Image src={image_url} alt={title} width={600} height={420} />
       </div>
       <div className="w-[100%] lg:w-[49%] flex flex-col gap-4 ">
         <h2 className="text-4xl">{title}</h2>

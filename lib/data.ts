@@ -47,9 +47,18 @@ export const PROJECTS = [
     stack: ["React Native Expo", "Firebase", "IoT"],
     description:
       "TrackPaws was my capstone project during college. It is a pet-tracking mobile application designed to help pet owners monitor their pets' locations. The application also includes a lost-and-found system, making it easier to locate missing pets and connect them with their owners. I contributed to the development of the lost-and-found feature as well as the overall design of both the mobile and web applications. ",
-    // image_url: "/trackpaws.png",
+    image_url: "/trackpaws.png",
     demo_link: "https://trackpaws-96bu.vercel.app/",
     code_link: "https://github.com/BJChickky12/TrackPaws-main",
+  },
+  {
+    title: "Lofi Beats (In progress)",
+    stack: ["Nextjs", "TypeScript", "Tailwind", "Firebase"],
+    description:
+      "Lofi Beats is a website that immerses users in the calming world of lofi music. It offers a wide variety of genres, including chillhop and ambient tracks, allowing users to explore different styles of lofi beats. The design features a timeless, minimalist aesthetic that perfectly complements the relaxing atmosphere of the music.",
+    image_url: "/lofi-beats.png",
+    demo_link: "https://chillx-nextjs.vercel.app/",
+    code_link: "https://github.com/jetdev34/chillx-nextjs",
   },
   // {
   //   title: "SushiMax - E-commerce website",
