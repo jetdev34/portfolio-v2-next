@@ -56,7 +56,7 @@ export const PROJECTS = [
     stack: ["Nextjs", "TypeScript", "Tailwind", "Firebase"],
     description:
       "Lofi Beats is a website that immerses users in the calming world of lofi music. It offers a wide variety of genres, including chillhop and ambient tracks, allowing users to explore different styles of lofi beats. The design features a timeless, minimalist aesthetic that perfectly complements the relaxing atmosphere of the music.",
-    image_url: "/lofi-beats.png",
+    image_url: "/lofi-beats2.png",
     demo_link: "https://chillx-nextjs.vercel.app/",
     code_link: "https://github.com/jetdev34/chillx-nextjs",
   },
