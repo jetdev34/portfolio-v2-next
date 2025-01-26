@@ -4,25 +4,38 @@ import Image from "next/image";
 import { useState } from "react";
 import TagStacks from "./TagStacks";
 import Button from "./Button";
+import Link from "next/link";
 
 interface Props {
   title: string;
   stacks: string[];
+  subtitle: string;
+  contribution: string;
+  role: string;
+  collaborators: string[];
+  duration: string;
   description: string;
   flip: string;
   demo_link: string;
   code_link: string;
   image_url: string;
+  details_link: string;
 }
 
 function ProjectCard({
   title,
   stacks,
   description,
+  subtitle,
+  contribution,
+  role,
+  collaborators,
+  duration,
   flip,
   demo_link,
   code_link,
   image_url,
+  details_link,
 }: Props) {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -34,11 +47,35 @@ function ProjectCard({
 
   return (
     <div className={`${flexClasses} py-4 gap-12 `}>
-      <div className="w-[100%] lg:w-[49%]">
-        <Image src={image_url} alt={title} width={600} height={420} />
+      <div className="w-[100%] lg:w-[49%] hover:opacity-80">
+        <Link
+          href={{
+            pathname: `/${details_link}`,
+            query: {
+              subtitle,
+              contribution,
+              collaborators,
+              role,
+              duration,
+              details_link,
+              image_url,
+              title,
+              description,
+              stacks,
+              demo_link,
+              code_link,
+            },
+          }}
+          // as={`/${details_link}`}
+          rel="noopener noreferrer"
+        >
+          <Image src={image_url} alt={title} width={600} height={420} />
+        </Link>
       </div>
       <div className="w-[100%] lg:w-[49%] flex flex-col gap-4 ">
-        <h2 className="text-4xl">{title}</h2>
+        <Link href={`/${details_link}`}>
+          <h2 className="text-4xl hover:opacity-80">{title}</h2>
+        </Link>
         <ul className="flex flex-row gap-2">
           {stacks.map((stack) => (
             <li key={stack}>

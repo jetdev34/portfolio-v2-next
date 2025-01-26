@@ -27,7 +27,14 @@ body {
 
 h1 {
   font-family: headerFont, sans-serif;
+  font-size: 2rem;
   /* font-family: regularFont; */
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: header2Font, sans-serif;
+  text-transform: uppercase;
 }
 
 @layer utilities {
@@ -35,8 +42,20 @@ h1 {
     @apply max-w-[1280px] mx-auto w-[80%];
   }
 
+  .container-sm {
+    @apply max-w-[1400px] mx-auto w-[96%];
+  }
+
   .spacing {
     @apply py-16 md:py-20;
+  }
+
+  .spacing-sm {
+    @apply py-6 md:py-10;
+  }
+
+  .accent {
+    @apply uppercase text-gray-400;
   }
 
   .link {

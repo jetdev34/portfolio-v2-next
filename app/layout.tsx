@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import NavBar from "./(main)/NavBar";
+import Footer from "./(main)/Footer";
 
 export const metadata: Metadata = {
   title: "JetDev | Personal Portfolio",
@@ -26,6 +28,10 @@ const regularFont = localFont({
   src: "../fonts/Synonym-Regular.otf",
   variable: "--font-regular",
 });
+const header2Font = localFont({
+  src: "../fonts/OffBit-101Bold.ttf",
+  variable: "--font-header-2",
+});
 
 export default function RootLayout({
   children,
@@ -34,8 +40,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${headerFont.variable} ${regularFont.variable}`}>
+      <body
+        className={`${header2Font.variable} ${headerFont.variable} ${regularFont.variable}`}
+      >
+        <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
