@@ -2,6 +2,7 @@ import React from "react";
 import ImageHeader from "./_components/ImageHeader";
 import InformationDetails from "./_components/InformationDetails";
 import RoleDetails from "./_components/RoleDetails";
+import Section from "@/components/Section";
 
 interface Props {
   searchParams: {
@@ -9,10 +10,10 @@ interface Props {
     description: string;
     subtitle: string;
     role: string;
-    contributors: string[];
     contribution: string;
+    collaborators: string[];
     duration: string;
-    stack: string;
+    stack: string[];
     image_url: string;
   };
 }
@@ -22,10 +23,10 @@ function Project({ searchParams }: Props) {
     image_url,
     description,
     subtitle,
-    // role,
+    role,
     contribution,
-    // contributors,
-    // duration,
+    // collaborators,
+    duration,
     // stack,
   } = searchParams;
   return (
@@ -37,7 +38,15 @@ function Project({ searchParams }: Props) {
         description={description}
         contribution={contribution}
       />
-      <RoleDetails />
+      <RoleDetails
+        role={role}
+        // collaborators={collaborators}
+        duration={duration}
+        // stack={stack}
+      />
+      <div className="border-t border-gray-600 w-full "></div>
+
+      <Section />
     </>
   );
 }
