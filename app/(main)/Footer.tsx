@@ -11,7 +11,6 @@ function Footer() {
         <div>
           {/* Date */}
           <span className="uppercase">Last updated {UPDATE_DATE}</span>
-
           <ul className="my-4 p-0 flex gap-4">
             <li className="link ">
               <Link

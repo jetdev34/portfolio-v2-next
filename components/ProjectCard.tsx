@@ -26,11 +26,6 @@ function ProjectCard({
   title,
   stacks,
   description,
-  subtitle,
-  contribution,
-  role,
-  collaborators,
-  duration,
   flip,
   demo_link,
   code_link,
@@ -48,27 +43,7 @@ function ProjectCard({
   return (
     <div className={`${flexClasses} py-4 gap-12 `}>
       <div className="w-[100%] lg:w-[49%] hover:opacity-80">
-        <Link
-          href={{
-            pathname: `/${details_link}`,
-            query: {
-              subtitle,
-              contribution,
-              collaborators,
-              role,
-              duration,
-              details_link,
-              image_url,
-              title,
-              description,
-              stacks,
-              demo_link,
-              code_link,
-            },
-          }}
-          // as={`/${details_link}`}
-          rel="noopener noreferrer"
-        >
+        <Link href={`/${details_link}`} rel="noopener noreferrer">
           <Image src={image_url} alt={title} width={600} height={420} />
         </Link>
       </div>

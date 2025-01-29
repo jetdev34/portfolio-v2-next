@@ -20,17 +20,17 @@ function Projects() {
             >
               <ProjectCard
                 flip={i % 2 === 0 ? "flex-row" : "flex-row-reverse"}
+                details_link={project.details_link}
                 title={project.title}
+                stacks={project.stack}
                 subtitle={project.subtitle}
                 contribution={project.contribution}
                 role={project.role}
                 collaborators={project.collaborators}
                 duration={project.duration}
                 description={project.description}
-                stacks={project.stack}
                 demo_link={project.demo_link}
                 code_link={project.code_link}
-                details_link={project.details_link}
                 image_url={project.image_url}
               />
             </FadeUpAnimation>

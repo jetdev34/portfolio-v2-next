@@ -2,53 +2,40 @@ import React from "react";
 import ImageHeader from "./_components/ImageHeader";
 import InformationDetails from "./_components/InformationDetails";
 import RoleDetails from "./_components/RoleDetails";
-import Section from "@/components/Section";
+// import Section from "@/components/Section";
+import { PROJECTS } from "@/lib/data";
+
+import { notFound } from "next/navigation";
 
 interface Props {
-  searchParams: {
-    title: string;
-    description: string;
-    subtitle: string;
-    role: string;
-    contribution: string;
-    collaborators: string[];
-    duration: string;
-    stack: string[];
-    image_url: string;
-  };
+  params: { projectId: string };
 }
-function Project({ searchParams }: Props) {
-  const {
-    title,
-    image_url,
-    description,
-    subtitle,
-    role,
-    contribution,
-    // collaborators,
-    duration,
-    // stack,
-  } = searchParams;
+
+export default function ProjectPage({ params }: Props) {
+  const project = PROJECTS.find((p) => p.details_link === params.projectId);
+
+  if (!project) {
+    return notFound();
+  }
+
   return (
     <>
-      <ImageHeader title={title} image_url={image_url} />
+      <ImageHeader title={project.title} image_url={project.image_url} />
       <InformationDetails
-        title={title}
-        subtitle={subtitle}
-        description={description}
-        contribution={contribution}
+        title={project.title}
+        subtitle={project.subtitle}
+        description={project.description}
+        contribution={project.contribution}
       />
       <RoleDetails
-        role={role}
-        // collaborators={collaborators}
-        duration={duration}
-        // stack={stack}
+        role={project.role}
+        duration={project.duration}
+        collaborators={project.collaborators}
+        stack={project.stack}
       />
-      <div className="border-t border-gray-600 w-full "></div>
-
-      <Section />
+      <div className="border-t border-gray-600 w-full"></div>
+      {/* The sections gives me error */}
+      {/* <Section sections={project.sections} /> */}
     </>
   );
 }
-
-export default Project;
