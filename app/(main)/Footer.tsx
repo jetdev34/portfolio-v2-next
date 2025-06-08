@@ -37,10 +37,10 @@ function Footer() {
           <Link
             target="_blank"
             className="link"
-            href="mailto:alonzoball07@gmail.com"
+            href="mailto:jethroalonzo34@gmail.com"
           >
             <div className="flex gap-2 items-center">
-              <span>alonzoball07@gmail.com</span>
+              <span>jethroalonzo34@gmail.com</span>
               <FaExternalLinkAlt size={10} />
             </div>
           </Link>

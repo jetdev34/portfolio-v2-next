@@ -1,4 +1,4 @@
-export const UPDATE_DATE = "2025-01-27";
+export const UPDATE_DATE = "2025-06-07";
 
 export const SKILLS = [
   {
@@ -22,7 +22,7 @@ export const SKILLS = [
     image_url: "/react-icon.svg",
   },
   {
-    name: "Next.js",
+    name: "Nextjs",
     image_url: "/nextjs-icon.svg",
   },
   {
@@ -40,6 +40,14 @@ export const SKILLS = [
   {
     name: "Figma",
     image_url: "/figma-icon.svg",
+  },
+  {
+    name: "Canva",
+    image_url: "/canva-icon.svg",
+  },
+  {
+    name: "SASS",
+    image_url: "/sass-icon.svg",
   },
 ];
 
@@ -107,21 +115,21 @@ export const PROJECTS = [
     code_link: "https://github.com/jetdev34/chillx-nextjs",
     details_link: "lofi-beats",
   },
-  {
-    title: "SushiMax",
-    subtitle: "E-commerce",
-    stack: ["Nextjs", "TypeScript", "Tailwind", "Firebase"],
-    description:
-      "SushiMax is an e-commerce website designed to provide a seamless online sushi ordering experience. The platform allows users to browse a variety of sushi options and customize their orders",
-    image_url: "/sushi.png",
-    contribution: "-",
-    collaborators: ["N/A"],
-    role: "Developer",
-    duration: "Jan 2025",
-    demo_link: "-",
-    code_link: "-",
-    details_link: "sushimax",
-  },
+  // {
+  //   title: "SushiMax",
+  //   subtitle: "E-commerce",
+  //   stack: ["Nextjs", "TypeScript", "Tailwind", "Firebase"],
+  //   description:
+  //     "SushiMax is an e-commerce website designed to provide a seamless online sushi ordering experience. The platform allows users to browse a variety of sushi options and customize their orders",
+  //   image_url: "/sushi.png",
+  //   contribution: "-",
+  //   collaborators: ["N/A"],
+  //   role: "Developer",
+  //   duration: "Jan 2025",
+  //   demo_link: "-",
+  //   code_link: "-",
+  //   details_link: "sushimax",
+  // },
   // {
   //   title: "Hoop Safe",
   //   stack: ["React", "Supabase", "YouTube API", "NBA API"],

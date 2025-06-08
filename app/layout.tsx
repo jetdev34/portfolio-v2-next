@@ -28,10 +28,10 @@ const regularFont = localFont({
   src: "../fonts/Synonym-Regular.otf",
   variable: "--font-regular",
 });
-const header2Font = localFont({
-  src: "../fonts/OffBit-101Bold.ttf",
-  variable: "--font-header-2",
-});
+// const header2Font = localFont({
+//   src: "../fonts/OffBit-101Bold.ttf",
+//   variable: "--font-header-2",
+// });
 
 export default function RootLayout({
   children,
@@ -40,9 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${header2Font.variable} ${headerFont.variable} ${regularFont.variable}`}
-      >
+      <body className={` ${headerFont.variable} ${regularFont.variable}`}>
         <NavBar />
         {children}
         <Footer />
