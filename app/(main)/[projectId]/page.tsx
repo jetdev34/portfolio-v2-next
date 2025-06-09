@@ -15,7 +15,7 @@ export default function ProjectPage({ params }: Props) {
   const project = PROJECTS.find((p) => p.details_link === params.projectId);
 
   if (!project) {
-    return notFound();
+    notFound();
   }
 
   return (
