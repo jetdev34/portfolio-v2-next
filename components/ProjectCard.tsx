@@ -43,14 +43,14 @@ function ProjectCard({
   return (
     <div className={`${flexClasses} py-4 gap-12 `}>
       <div className="w-[100%] lg:w-[49%] hover:opacity-80">
-        <Link href={`/${details_link}`} rel="noopener noreferrer">
-          <Image src={image_url} alt={title} width={600} height={420} />
-        </Link>
+        {/* <Link href={`/${details_link}`} rel="noopener noreferrer"> */}
+        <Image src={image_url} alt={title} width={600} height={420} />
+        {/* </Link> */}
       </div>
       <div className="w-[100%] lg:w-[49%] flex flex-col gap-4 ">
-        <Link href={`/${details_link}`}>
-          <h2 className="text-4xl hover:opacity-80">{title}</h2>
-        </Link>
+        {/* <Link href={`/${details_link}`}> */}
+        <h2 className="text-4xl hover:opacity-80">{title}</h2>
+        {/* </Link> */}
         <ul className="flex flex-row gap-2">
           {stacks.map((stack) => (
             <li key={stack}>
