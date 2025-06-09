@@ -75,7 +75,7 @@ export const PROJECTS = [
     image_url: "/trackpaws-lg.jpg",
     demo_link: "https://trackpaws-96bu.vercel.app/",
     code_link: "https://github.com/BJChickky12/TrackPaws-main",
-    details_link: "trackpaws",
+    // details_link: "trackpaws",
     sections: {
       sectionOne: {
         title: "mobile application",
@@ -113,7 +113,7 @@ export const PROJECTS = [
     image_url: "/lofi-beats2.png",
     demo_link: "https://chillx-nextjs.vercel.app/",
     code_link: "https://github.com/jetdev34/chillx-nextjs",
-    details_link: "lofi-beats",
+    // details_link: "lofi-beats",
   },
   // {
   //   title: "SushiMax",

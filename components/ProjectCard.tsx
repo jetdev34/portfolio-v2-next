@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import TagStacks from "./TagStacks";
 import Button from "./Button";
-import Link from "next/link";
+// import Link from "next/link";
 
 interface Props {
   title: string;
@@ -19,7 +19,7 @@ interface Props {
   demo_link: string;
   code_link: string;
   image_url: string;
-  details_link: string;
+  // details_link: string;
 }
 
 function ProjectCard({
@@ -30,8 +30,8 @@ function ProjectCard({
   demo_link,
   code_link,
   image_url,
-  details_link,
-}: Props) {
+}: // details_link,
+Props) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const flexClasses = `flex flex-col md:flex-row ${

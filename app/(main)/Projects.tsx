@@ -20,7 +20,7 @@ function Projects() {
             >
               <ProjectCard
                 flip={i % 2 === 0 ? "flex-row" : "flex-row-reverse"}
-                details_link={project.details_link}
+                // details_link={project.details_link}
                 title={project.title}
                 stacks={project.stack}
                 subtitle={project.subtitle}
