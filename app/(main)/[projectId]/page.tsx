@@ -7,11 +7,13 @@ import { PROJECTS } from "@/lib/data";
 
 import { notFound } from "next/navigation";
 
-interface Props {
-  params: { projectId: string };
-}
+type ProjectPageProps = {
+  params: {
+    projectId: string;
+  };
+};
 
-export default function ProjectPage({ params }: Props) {
+export default function ProjectPage({ params }: ProjectPageProps) {
   const project = PROJECTS.find((p) => p.details_link === params.projectId);
 
   if (!project) {
