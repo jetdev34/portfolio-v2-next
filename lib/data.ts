@@ -1,4 +1,4 @@
-export const UPDATE_DATE = "2025-06-07";
+export const UPDATE_DATE = "2025-08-09";
 
 export const SKILLS = [
   {
@@ -30,8 +30,28 @@ export const SKILLS = [
     image_url: "/tailwind-icon.svg",
   },
   {
+    name: "SASS",
+    image_url: "/sass-icon.svg",
+  },
+  {
+    name: "Expressjs",
+    image_url: "/express.svg",
+  },
+  {
+    name: "MongoDB",
+    image_url: "/mongodb.svg",
+  },
+  {
+    name: "Cloudinary",
+    image_url: "/cloudinary.svg",
+  },
+  {
     name: "Firebase",
     image_url: "/firebase-icon.svg",
+  },
+  {
+    name: "Postman",
+    image_url: "/postman.svg",
   },
   {
     name: "GitHub",
@@ -44,10 +64,6 @@ export const SKILLS = [
   {
     name: "Canva",
     image_url: "/canva-icon.svg",
-  },
-  {
-    name: "SASS",
-    image_url: "/sass-icon.svg",
   },
 ];
 

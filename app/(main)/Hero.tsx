@@ -20,7 +20,7 @@ function Hero() {
 
           <FadeAnimation delay={1.4}>
             <span className="text-lg md:text-xl lg-2xl ">
-              Front-end Developer
+              Software Engineer
             </span>
           </FadeAnimation>
 
